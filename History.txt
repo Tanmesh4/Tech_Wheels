@@ -1,0 +1,110 @@
+package com.example.techwheelsservicecentre;
+
+import android.app.AlertDialog;
+import android.content.Intent;
+import android.database.Cursor;
+import android.provider.ContactsContract;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
+public class History extends AppCompatActivity {
+    // private static String email;
+    // private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    // private static String TAG="Firebase";
+    //private List<String> name
+    Button buttonhistory;
+    ListView lshistory;
+    DatabaseHelper techdb = new DatabaseHelper(this);
+    ArrayList<UserInfor> list = new ArrayList<>();
+    UserInfor user;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_history);
+        buttonhistory = (Button) findViewById(R.id.view_history);
+        lshistory = (ListView) findViewById(R.id.listhistory);
+        //   Intent i=getIntent();
+        //    email=i.getStringExtra("email");
+        //    Query docRef = db.collection("History").whereEqualTo("email", email);
+
+
+        Cursor cursor = techdb.showData();
+        int norows=cursor.getCount();
+        if(norows == 0)
+        {
+            Toast.makeText(getApplicationContext()," Database is Empty ",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else
+        {
+                while(cursor.moveToNext())
+            {
+                user = new UserInfor(cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4));
+                list.add(user);
+                ListAdapter listAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,list);
+                lshistory.setAdapter(listAdapter);
+            }
+        }
+
+
+
+        buttonhistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Cursor cursor=techdb.showData();
+
+                if(cursor.getCount() == 0)
+                {
+                display(" ERROR "," No data Found ");
+                 return;
+                }
+
+                StringBuffer stringBuffer=new StringBuffer();
+                while(cursor.moveToNext())
+                {
+                    stringBuffer.append("\n");
+                    stringBuffer.append("ID: "+cursor.getString(0)+"\n");
+                    stringBuffer.append("Vehicle Model: "+cursor.getString(1)+"\n");
+                    stringBuffer.append("Registered Number: "+cursor.getString(2)+"\n");
+                    stringBuffer.append("Date: "+cursor.getString(3)+"\n");
+                    stringBuffer.append("Time Slot: "+cursor.getString(4)+"\n");
+
+                   display("History",stringBuffer.toString());
+                }
+            }
+        });
+    }
+    public void display(String title,String message)
+    {
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.show();
+        builder.setIcon(R.drawable.black_icon);
+
+    }
+    }
+

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/changebk"
+    tools:context=".Book_slot">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="188dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="159dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/try_icon" />
+
+        <TextView
+            android:id="@+id/loginscrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Your Slot"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:id="@+id/dateselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Date"
+            android:textColor="@color/colorTextView"
+            android:textSize="20dp"
+            app:srcCompat="@android:drawable/ic_menu_day"/>
+
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:hint="Click on Date to select date"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+
+            />
+        <TextView
+            android:id="@+id/timeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Time:"
+            android:textColor="@color/colorTextView"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="20dp"
+            android:scrollbarSize="10dp"
+
+            />
+        <TextView
+            android:id="@+id/availslot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:hint="Available Slots"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"></TextView>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Vehicle Model"
+            android:textColor="@color/colorTextView"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            />
+        <AutoCompleteTextView
+            android:id="@+id/vehiclemodel"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint=" eg:- Maruti Swift"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:text="Registration Number"
+            android:textColor="@color/colorTextView"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:id="@+id/regno"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Vehicle number"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"
+            />
+
+
+        <Button
+            android:id="@+id/confirmSlot"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_selector"
+            android:text="Confirm Slot"
+            android:textAllCaps="false"
+            android:textColor="@color/changebk"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

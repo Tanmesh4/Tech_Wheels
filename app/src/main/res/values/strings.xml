@@ -1,0 +1,178 @@
+<resources>
+<string name="forgot_pass">
+    \t\t We just need your registered email-id to\n\t\t send you password reset!
+</string>
+
+    <string name="forgot_pass1">
+    \t\t We just need your registered email-id to send you password reset!
+</string>
+    <string-array name="spinner">
+        <item>Select time-slot</item>
+        <item>9AM-11AM</item>
+        <item>11AM-1PM</item>
+        <item>2PM-4PM</item>
+        <item>4PM-6PM</item>
+    </string-array>
+
+    <string-array name="cars">
+        <item>Maruti Baleno</item>
+        <item>Maruti Swift </item>
+        <item>Maruti Wagon</item>
+        <item>Maruti Vitara Brezza</item>
+        <item>Maruti DzireRs</item>
+        <item>Maruti Ertiga</item>
+        <item>Maruti Alto</item>
+        <item>Maruti Celerio</item>
+        <item>Maruti Alto K1</item>
+        <item>Maruti Ciaz</item>
+        <item>Maruti S-Cross</item>
+        <item>Maruti Ignis</item>
+        <item>Maruti Eeco</item>
+        <item>Maruti Omni</item>
+        <item>Maruti Gypsy</item>
+        <item>Maruti Celerio X</item>
+        <item>Maruti Baleno R</item>
+        <item>Ford EcoSport</item>
+        <item>Ford Endeavour</item>
+        <item>Ford Freestyle</item>
+        <item>Ford Aspire</item>
+        <item>Ford Mustang</item>
+        <item>Ford FigoR</item>
+        <item>Honda Amaze</item>
+        <item>Honda City</item>
+        <item>Honda WRV</item>
+        <item>Honda Civic</item>
+        <item>Honda BRV</item>
+        <item>Honda Jazz</item>
+        <item>Honda Brio</item>
+        <item>Honda CR-V</item>
+        <item>Honda Accord</item>
+        <item>Tata Harrier</item>
+        <item>Tata Nexon</item>
+        <item>Tata Tiago</item>
+        <item>Tata Hexa</item>
+        <item>Tata Tigor</item>
+        <item>Tata Safari Storme</item>
+        <item>Tata Sumo</item>
+        <item>Tata Zest</item>
+        <item>Tata Nano</item>
+        <item>Tata Tiago</item>
+        <item>Tata Bolt</item>
+        <item>Tata Tiago JTP</item>
+        <item>Tata Tigor JTP</item>
+    </string-array>
+    <string name="app_name">Tech Wheels</string>
+    <string name="booki">Tech Wheels</string>
+    <string name="welcome_back">Welcome Back </string>
+    <string name="read_it_together">Tech Wheels</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="title_activity_dashboard__tw">Tech Wheels Service Center</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Tech Wheels</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+    <string name="title_activity_our__services"></string>
+    <string name="large_text">
+
+      <b><font color="black" size="20">\t\t Dent And Paint:-\n\n</font></b>
+
+ *\t  The only multi brand service provider to give 3 months\n\t\t insurance on panel\n
+ *\t  PPG Asian grade 1 DuPont paint used by our car\n\t\t garages in Solapur\n
+ *\t  1 year paint warranty\n
+ *\t  Top quality at best price\n
+ *\t  Car bumper repair/ replacement service\n
+ *\t  Accidental car repairs at lowest price\n
+ *\t  Pickup and drop from any location in Solapur\n
+ *\t  Guaranteed same day car delivery\n
+ *\t  100% customer satisfaction\n
+ *\t  Garages specializing in minor scratches, car denting \n\t\t and painting in Solapur\n
+ *\t  Multiple quotation to choose from different garages\n\n
+
+        <b><font color="black" size="20">\t\t Car Interior Cleaning:-\n\n</font></b>
+
+ *\t  Comprehensive service right at your doorstep\n
+ *\t  Scrubbing and cleaning of the floormats\n
+ *\t  Vacuuming of the floor area, roof area and dickey\n
+ *\t  Cleaning of the seats using insdustry standard\n\t\t chemicals\n
+ *\t  Scrubbing and cleaning of all door panels with\n\t\t microfiber cloth\n
+ *\t  Waxing and polishing of the dashboard\n
+ *\t  One litre of water and an electricity point is required\n\n
+
+        <b><font color="black" size="20">\t\tConvenient Car Servicing and Repairs:-\n\n</font></b>
+
+ *\t  30% cost saving on car servicing in Solapur\n
+ *\t  100% transparent process\n
+ *\t  Genuine OES/OEM parts with warranty used in all\n\t\t garages\n
+ *\t  79 point inspection at your doorstep from industry\n\t\t expert service advisors\n
+ *\t  Instant detail car health inspection report\n
+ *\t  Post inspection get quotations from a multi brand,\n\t\t local and authorised center\n
+ *\t  30+ garage network spread across Solapur\n
+ *\t  Most trusted car service center in Solapur with many\n\t\t happy customers\n
+ *\t  Free pick, work supervision at the garage and drop\n\t\t from your home or office\n\n
+
+        <b><font color="black" size="20">\t\t Tyre replacement, Wheel alignment, Wheel balancing:-\n\n</font></b>
+
+ *\t Wheel rotation to prevent uneven wear and tear\n
+ *\t  Wheel alignment ensures durability of the wheel\n
+ *\t  Wheel balancing ensures a smooth and safe drive\n
+ *\t  Free pickup and drop service i.e we picked up your car\n\t\t get your tyre replaced and drop your\n\t\t car back to your place\n
+ *\t  Discounted price on tyres\n\n
+
+        <b><font color="black" size="20">\t\t    Battery Services:-\n\n</font></b>
+
+ *\t  Doorstep car battery replacement\n
+ *\t  Car battry jump start\n
+ *\t  Doorstep car battery checkup\n\n
+
+        <b><font color="black" size="20">\t\t    Second Hand Car Inspection:-\n\n</font></b>
+
+ *\t  79 point inspection of your used car\n
+ *\t  Industry expert advisors with over 10 years experience\n
+ *\t  Diagnosis to let you know whether or not to purchase\n\t\t the car\n\n
+
+        <b><font color="black" size="20">\t\t    Insurance Renewal:-\n\n</font></b>
+
+ *\t  Multiple brands to choose from\n
+ *\t  Multiple quotes in 24 hours\n
+ *\t  Expertise to find the ideal plan for you\n\n
+
+        <b><font color="black" size="20">\t\t    Car A/C Services:-\n\n</font></b>
+
+ *\t  High quality maintenence and cooling guarantee\n
+ *\t  A/C Compressor Check\n
+ *\t  A/C Leak Test\n
+ *\t  A/C Gas Recharge\n\n
+
+        <b><font color="black" size="20">\t\t \t\t\t!Tech Wheels is happy to serve!\n</font></b>
+    </string>
+    <string name="title_activity_about__us">ALL About Tech Wheels</string>
+
+    <string name="aboutus">
+
+        <b><font color="black" size="25">  Devloped By :</font></b>\n
+        \n<font size="20">
+        * \t\t Sanket Gandhi\n
+        * \t\t Tanmesh Shah\n
+        * \t\t Shreyas Awate\n
+        *  \t\t Shridhar Daga\n\n
+        </font>
+        \n\n
+        <b><font color="black" size="20"> Terms and Privacy Policy:</font></b>\n
+        \n
+        \t\t By using TechWheels you agree to TechWheels terms\n\t\t and privacy policy\n\n
+            \n\n
+        \n\nVersion 1.0.1(TechWheels)\n\n
+
+        <b><font color="black" size="10">Copyrights Reserved "Tech Wheels"</font></b>\n\n
+
+
+
+    </string>
+</resources>

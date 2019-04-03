@@ -104,6 +104,7 @@ public class Sign_up extends AppCompatActivity implements View.OnClickListener {
             Toast.makeText(this, "Please Enter password",Toast.LENGTH_SHORT).show();
             //stopping further execution
             return;
+            /////
         }
 
         if(password.length()<6){
